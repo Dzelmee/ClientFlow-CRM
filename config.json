@@ -1,0 +1,34 @@
+{
+  "name": "ClientFlow",
+  "subtitle": "Relacionamentos que geram negócios.",
+  "plural": "registros",
+  "singular": "Registro",
+  "fields": [
+    {
+      "key": "cliente",
+      "label": "Cliente",
+      "type": "text"
+    },
+    {
+      "key": "empresa",
+      "label": "Empresa",
+      "type": "text"
+    },
+    {
+      "key": "etapa",
+      "label": "Etapa",
+      "type": "select",
+      "options": [
+        "Lead",
+        "Contato",
+        "Proposta",
+        "Fechado"
+      ]
+    },
+    {
+      "key": "valor",
+      "label": "Valor estimado (R$)",
+      "type": "number"
+    }
+  ]
+}
