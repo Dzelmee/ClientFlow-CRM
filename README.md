@@ -1,37 +1,33 @@
-# clientflow.
+# ClientFlow CRM
 
-Desenvolvi uma interface de CRM para registrar informações comerciais, pesquisar contatos e acompanhar os registros em um painel.
+Quis montar um CRM que fosse direto ao ponto: cadastrar contatos, encontrar informações rapidamente e acompanhar o que está acontecendo com os registros comerciais. O desafio foi fazer o painel ser útil sem deixar a interface carregada.
 
-É um projeto de portfólio voltado a **contatos e oportunidades comerciais**. Trabalhei tanto na apresentação visual quanto nas operações de cadastro e consulta dos dados.
-
-## O que implementei
+## O que funciona
 
 - Cadastro, edição e exclusão de registros, com validação no servidor.
-- Busca e formulários para trabalhar com os dados.
-- Indicadores calculados a partir dos registros existentes.
-- Interface responsiva, tema claro/escuro e animações com suporte a redução de movimento.
+- Pesquisa e formulários para consultar e atualizar informações.
+- Indicadores calculados a partir dos dados cadastrados.
+- Layout responsivo, temas claro e escuro e animações que respeitam a preferência por movimento reduzido.
 
-## Tecnologias
-
-HTML, CSS, JavaScript com ES Modules e Node.js usando o módulo HTTP nativo. Os dados são mantidos em um arquivo JSON local.
-
-## Executar localmente
+## Como executar
 
 ```bash
 npm test
 npm start
 ```
 
-A aplicação abre em `http://localhost:3000`. É possível alterar a porta pela variável `PORT`.
+O servidor inicia em `http://localhost:3000`. Para usar outra porta, configure `PORT`.
 
-## O que ainda falta para produção
+## Tecnologias e armazenamento
 
-Este é um projeto demonstrativo, sem autenticação, controle de acesso por usuário ou banco de dados de produção. Os dados são armazenados localmente em JSON; não há suporte garantido a múltiplas instâncias ou concorrência. As imagens externas dependem de conexão com a internet.
+Usei HTML, CSS e JavaScript com ES Modules no front-end. O servidor é feito em Node.js, usando o módulo HTTP nativo. Os registros ficam em um arquivo JSON local.
+
+## Limitações
+
+Esta é uma aplicação de demonstração, não um serviço pronto para produção. Ainda não há autenticação, permissões por usuário nem banco de dados de produção. O armazenamento em JSON também não foi pensado para várias instâncias simultâneas.
 
 ## Imagens
 
-Imagens utilizadas do Unsplash, conforme a [licença da plataforma](https://unsplash.com/license).
-
-Referências usadas neste projeto:
+Usei fotografias do [Unsplash](https://unsplash.com/license):
 - https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=85
-- https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85.
+- https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85
